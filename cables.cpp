@@ -11,6 +11,6 @@ int main (int argc, char const *argv[]) {
     int D = atoi(argv[2]);
     int res = 0;
     calculation(D,N,res);
-    std::cout << res;
+    std::cout << res << "\n";
     return 0;
 }
