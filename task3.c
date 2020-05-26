@@ -36,7 +36,7 @@ void print_time(time_t *file_time) {
 	char buf[100];
 	struct tm* tm_info;	
 	if((tm_info = localtime(file_time)) != NULL) {		
-		strftime(buf, 26, "%b %d %H:%M", tm_info);  
+		strftime(buf, 100, "%b %d %H:%M", tm_info);  
 		printf("%s ",buf);
 	}
 }
