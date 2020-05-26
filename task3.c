@@ -1,10 +1,10 @@
 /*  
 	This program is an analog of ls -la command in Linux terminal 
-    As an argument, it takes the name of the directory whose information needs to be displayed
+	As an argument, it takes the name of the directory whose information needs to be displayed
 	example:
 	input:  /media/Gl_test/
 	output: drwxrwx--- 1 root vboxsf  4096 May 22 11:39 .
-			-rwxrwx--- 1 root vboxsf   229 May 22 11:09 steps.c
+		-rwxrwx--- 1 root vboxsf   229 May 22 11:09 steps.c
 */
 
 #include <stdio.h>
