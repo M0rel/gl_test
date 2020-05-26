@@ -32,10 +32,10 @@ void print_mode(mode_t* mode) {
     printf((*mode & S_IXOTH) ? "x" : "-");	//Execute/search permission, others.
 }
 
-void print_time(time_t *file_time) {
+void print_time(time_t *time) {
 	char buf[100];
 	struct tm* tm_info;	
-	if((tm_info = localtime(file_time)) != NULL) {		
+	if((tm_info = localtime(time)) != NULL) {		
 		strftime(buf, 100, "%b %d %H:%M", tm_info);  
 		printf("%s ",buf);
 	}
